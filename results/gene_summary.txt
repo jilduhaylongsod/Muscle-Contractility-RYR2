@@ -1,0 +1,4 @@
+Gene symbol: RYR2
+NCBI Gene ID: 6262
+Official name: ryanodine receptor 2
+Chromosome: 1
