@@ -48,6 +48,7 @@ The R project folder Muscle_Contractility_RYR2 that contains the analysis.R scri
 **2. Retrieving of the human RYR2 gene record from NCBI using R.
 
 <img width="390" height="329" alt="image" src="https://github.com/user-attachments/assets/c8f713c0-2d0b-4e4b-88c8-790e9835bd33" />
+
 <img width="339" height="97" alt="image" src="https://github.com/user-attachments/assets/715eda52-d8b2-46f8-9413-0c3f6e8406d1" />
 
 Retrieval of the human NCBI Gene record for the selected gene, RYR2, using R code with the exact gene symbol and human taxonomy ID (9606). The code identifies the numeric Gene ID, official gene name, and chromosome. 
@@ -55,6 +56,7 @@ Retrieval of the human NCBI Gene record for the selected gene, RYR2, using R cod
 **3. Retrieving of the corresponding protein sequence using the assigned transcript.**
 
 <img width="500" height="302" alt="image" src="https://github.com/user-attachments/assets/baf260a4-a2b4-485d-8a44-d7eb367113df" />
+
 <img width="489" height="87" alt="image" src="https://github.com/user-attachments/assets/f68636d4-9b17-49e3-a451-9395ba80d47a" />
 
 The transcript NM_001035.3 was used to identify its corresponding protein record in NCBI. The protein sequence was downloaded in FASTA format, saved in the data folder, and its accession number was recorded in the results folder.
@@ -76,3 +78,58 @@ The assigned RYR2 variant, NM_001035.3:c.1258C>T (p.Arg420Trp), was examined in 
 <img width="521" height="324" alt="image" src="https://github.com/user-attachments/assets/5ef1ba6b-bc0f-4941-8f0e-f8fdcd2aff4b" />
 
 The reference protein was visualized in R, showing the amino acid position of the assigned variant (p.Arg420Trp) along the protein sequence. The figure was saved as a PNG file for documentation.
+
+**7. Molecular mechanism**
+
+The RYR2 gene provides instructions for producing ryanodine receptor 2, a calcium-release channel found in the sarcoplasmic reticulum of cardiac muscle cells. This channel releases calcium ions into the cytoplasm, allowing the heart muscle to contract. Proper regulation of calcium release is important for normal heart contraction and relaxation. The assigned variant, NM_001035.3:c.1258C>T (p.Arg420Trp), is a missense variant that changes the amino acid arginine to tryptophan at position 420 of the RYR2 protein. ClinVar currently classifies this variant as pathogenic. Experimental studies have shown increased calcium release through RYR2 channels and altered calcium signaling. Studies in knock-in mice also found increased susceptibility to abnormal heart rhythms. These findings support the variant's effect on protein function, although the exact molecular changes should not be assumed to explain every clinical outcome. RYR2 gene → production of the RYR2 calcium channel → regulation of calcium release in cardiac muscle → p.Arg420Trp amino acid change → abnormal calcium release and signaling → increased susceptibility to irregular heart rhythms. Calcium imaging could be used to compare calcium release in cardiac cells expressing normal RYR2 and cells expressing the p.Arg420Trp variant. The calcium signals could be measured and compared to determine whether the variant causes changes in calcium release during muscle contraction. 
+
+**8. Make the complete workflow and final results available on GitHub**
+
+The GitHub repository, Muscle-Contractility-GENE, contains the complete workflow and results of the RYR2 gene analysis, including the R script, protein FASTA sequence, gene summary, protein accession, amino acid composition, and generated figures. The README.md file provides the assignment details, research question, step-by-step methods, results, variant interpretation, limitations, proposed validation experiment, and database references to help other students reproduce the analysis. 
+
+## D. Results/Figures
+
+**Table 1.** Amino acid composition of the RYR2 protein showing the count of each amino acid residue in the analyzed protein sequence.
+
+<img width="82" height="210" alt="image" src="https://github.com/user-attachments/assets/f87da110-d832-497d-b262-477211f27cf3" />
+
+<img width="2400" height="1500" alt="01_amino_acid_composition" src="https://github.com/user-attachments/assets/0a52a9af-ba43-4fe0-b327-688631afabcc" />
+
+**Figure 1.** Amino acid composition of the RYR2 protein showing the number of residues for each of the 20 standard amino acids. Leucine (L) was the most abundant amino acid, while tryptophan (W) was the least abundant in the analyzed protein sequence. 
+
+<img width="2400" height="750" alt="02_variant_position" src="https://github.com/user-attachments/assets/680248bc-c78e-4342-8187-1daa294bd391" />
+
+**Figure 2.** Visualization of the RYR2 reference protein sequence showing the position of the assigned variant, p.Arg420Trp, at amino acid 420, where arginine is replaced by tryptophan. 
+
+## E. Variant Interpretation
+
+The RYR2 variant p.Arg420Trp (NM_001035.3:c.1258C>T) is a missense variant that changes the amino acid arginine to tryptophan at position 420 of the RYR2 protein. This change replaces a positively charged amino acid with one that has different chemical properties, which may affect protein function. ClinVar classifies this variant as pathogenic (Variation ID: 201214). Experimental studies have shown that the variant can increase calcium release through RYR2 channels and disrupt normal calcium signaling. It has also been reported in individuals with catecholaminergic polymorphic ventricular tachycardia (CPVT), a condition that can cause abnormal heart rhythms, and sudden unexplained death. These findings support the interpretation that p.Arg420Trp can affect RYR2 function and contribute to heart rhythm disorders (NCBI ClinVar, 2026).
+
+## F. Limitations and a possible validation experiment
+
+One limitation of this analysis is that it mainly relies on online databases and protein sequence analysis. Although these methods help identify the p.Arg420Trp variant in the RYR2 protein, they cannot fully explain how the change affects calcium release in heart muscle cells. The results also depend on the information available from previous studies. To further investigate the variant, calcium release could be compared between cardiac cells with the normal RYR2 protein and those with the variant. This would help determine whether the amino acid change affects the protein's function. 
+
+## G. Database links, accession versions, access dates, and citations
+
+| Database/Resource | Accession or Record ID | Link | Access Date |
+|---|---|---|---|
+| NCBI Gene | RYR2 (Human) | [NCBI Gene](https://www.ncbi.nlm.nih.gov/datasets/gene/6262/) | October 27, 2026 |
+| NCBI Nucleotide | NM_001035.3 | [RYR2 mRNA Sequence](https://www.ncbi.nlm.nih.gov/nuccore/NM_001035.3) | October 27, 2026 |
+| NCBI Protein | NP_001026.2 | [RYR2 Protein Sequence](https://www.ncbi.nlm.nih.gov/protein/NP_001026.2) | October 27, 2026 |
+| ClinVar | Variation ID 201214 | [RYR2 Variant Record](https://www.ncbi.nlm.nih.gov/clinvar/variation/201214/) | October 27, 2026 |
+
+## H. Discussion
+
+The analysis of the RYR2 gene focused on examining its reference protein sequence and amino acid composition using bioinformatics tools and R programming. The reference transcript, NM_001035.3, and its corresponding protein sequence were retrieved from the National Center for Biotechnology Information (NCBI). The protein sequence was analyzed in R to determine its length and count the 20 standard amino acids. The results showed that leucine (L) was the most abundant amino acid, with 555 residues, followed by glutamic acid (E), with 410 residues, and serine (S), with 353 residues. In contrast, tryptophan (W) was the least abundant, with 57 residues. These results were presented in a table and bar graph to show the distribution of amino acids in the RYR2 protein.
+The protein sequence was also visualized to show the location of the assigned variant at amino acid position 420. This visualization helped identify the specific position within the protein sequence for reference in the analysis. The use of R programming made it easier to process the protein sequence, count amino acid residues, and generate figures for presenting the results. Organizing the outputs into tables, graphs, and text files also made the analysis easier to review and reproduce.
+Throughout the activity, online databases such as NCBI Gene, NCBI Nucleotide, NCBI Protein, and ClinVar were used to obtain gene, transcript, protein, and variant information. These resources provided the reference records needed to support the analysis and document the assigned gene. The results and figures were organized into a GitHub repository containing the R script, protein FASTA file, summary files, amino acid composition table, and generated figures. The README file documents the workflow and provides instructions that other students can follow to reproduce the analysis.
+Overall, this activity demonstrated how bioinformatics tools and databases can be used to examine a gene and its protein sequence. It also provided practical experience in using R to analyze biological data, generate visual representations, and organize research outputs. The activity highlighted the importance of accurate data retrieval, proper documentation, and reproducible methods in biological research.
+
+## Scientific Refereces
+
+Gao, K., Wang, W., Ling, Y., Li, B., Xing, C., Li, N., Yin, X., Tao, L., Li, X., Qiu, J., Wang, X., & Wei, J. (2026). Structural and Functional Regulation of RyR2 in Cardiac Calcium Handling and Arrhythmogenesis. Biomedicines, 14(3), 662. https://doi.org/10.3390/biomedicines14030662
+
+Calcium-release channels: Structure and function of IP3 receptors and ryanodine receptors | physiological reviews | american physiological society. (n.d.). https://journals.physiology.org/doi/full/10.1152/physrev.00033.2020 
+
+U.S. National Library of Medicine. (n.d.). Checking your browser - recaptcha. National Center for Biotechnology Information. https://www.ncbi.nlm.nih.gov/clinvar/variation/201214/ 
+
